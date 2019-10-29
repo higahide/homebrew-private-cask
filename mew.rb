@@ -34,7 +34,7 @@ class Mew < Formula
   sha256 "cf44c4f9ca704ba1edce7134bc7f38a17361391d5be1090221431a3a06f6bf47"
 
   def install
-    system "./configure", "--prefix=#{prefix}", "--with-emacs=/usr/bin/emacs"
+    system "./configure", "--prefix=#{prefix}", "--with-emacs=/usr/local/bin/emacs"
     system "make", "install" # if this fails, try separate make/make install steps
     system "make", "install-info"
     system "make", "install-jinfo"
